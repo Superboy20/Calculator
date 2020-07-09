@@ -1,0 +1,225 @@
+html, body {
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+}
+
+html {
+    background: rgb(14, 15, 39);
+}
+
+h1 {
+    margin-top: 100px
+}
+
+body {
+    margin: auto;
+    width: 50%; 
+}
+
+#root {
+    margin: 100px auto;
+    padding: 5px;
+    background-color: black;
+    width: 320px;
+    height: 360px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 50px 35px rgb(155, 155, 155);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.1px;
+    grid-template-areas: "display display display display"
+                         "cdisplay cdisplay cdisplay cdisplay"
+                         "clear clear del divide"
+                         "seven eight nine multiply"
+                         "four five six subtract"
+                         "one two three add"
+                         "zero zero dec equals";
+}
+
+button {
+    background-color: rgb(43, 43, 43);
+    font-family: 'Arial';
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3%;
+    border-color: silver;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgb(119, 119, 119);
+    color: black;
+}
+
+#clear:hover {
+    background-color: rgb(83, 83, 83);
+    color: rgb(255, 105, 85);
+    font-size: 20px;
+}
+
+#del:hover {
+    background-color: rgb(83, 83, 83);
+    color: lightgreen;
+    font-size: 20px;
+}
+
+#multiply:hover {
+    background-color: rgb(83, 83, 83);
+    color: lightgreen;
+    font-size: 20px;
+}
+
+#divide:hover {
+    background-color: rgb(83, 83, 83);
+    color: lightgreen;
+    font-size: 20px;
+}
+
+#equals:hover {
+    background-color: rgb(42, 170, 25);
+    color: white;
+    font-size: 20px;
+}
+
+#subtract:hover {
+    background-color: rgb(83, 83, 83);
+    color: lightgreen;
+    font-size: 20px;
+}
+
+#add:hover {
+    background-color: rgb(83, 83, 83);
+    color: lightgreen;
+    font-size: 20px;
+}
+
+button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(1.5px);
+}
+
+#display {
+    grid-area: display;
+    padding: 10px;
+    color: white;
+    text-align: right;
+    background-color: darkslategray;
+    border: none;
+    font-size: 22px;
+    font-family: 'Roboto';
+}
+
+#cdisplay {
+    grid-area: cdisplay;
+    padding: 10px;
+    color: white;
+    text-align: right;
+    background-color: black;
+    border: none;
+    font-size: 25px;
+    font-family: 'Roboto';
+}
+
+#clear {
+    grid-area: clear;
+    background-color: rgb(61, 65, 70);
+    color: rgb(255, 105, 85);
+    
+}
+
+#divide {
+    grid-area: divide;
+    background-color: rgb(61, 65, 70);
+    color: lightgreen;
+}
+
+#multiply {
+    grid-area: multiply;
+    background-color: rgb(61, 65, 70);
+    color: lightgreen;
+}
+
+#del {
+    grid-area: del;
+    background-color: rgb(61, 65, 70);
+    color: lightgreen;
+}
+
+#neg {
+    grid-area: neg;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#dec {
+    grid-area: dec;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: rgb(3, 128, 3);
+    color: rgb(255, 255, 255);
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#add {
+    grid-area: add;
+    background-color: rgb(61, 65, 70);
+    color: lightgreen;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#subtract {
+    grid-area: subtract;
+    background-color: rgb(61, 65, 70);
+    color: lightgreen;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#footer {
+    padding: 20px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
